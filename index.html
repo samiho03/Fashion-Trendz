@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Trendz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1 id="name">Fashion Trendz</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#trends">Trends</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>Discover Your Style</h2>
+        <p>Step into the world of fashion with the latest trends!</p>
+        <button onclick="showAlert()">Explore Now</button>
+    </section>
+
+   <!-- Fashion Gallery -->
+    <section id="gallery">
+        <h2>Fashion Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="images/download (1).jpeg" alt="Fashion 2">
+                <div class="caption">Elegant Dress</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/Bright Yellow, The Colour Which Has Come To Define Gen Z.jpeg" alt="Fashion 1">
+                <div class="caption">Bright Yellow</div>
+            </div>
+          
+            <div class="gallery-item">
+                <img src="images/download (2).jpeg" alt="Fashion 3">
+                <div class="caption">Street Style</div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="images/UNEXPECTED BLACK AND WHITE PIECES.jpeg" alt="Fashion 5">
+                <div class="caption">Black & White</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img src="" alt="Lightbox Image">
+    </div>
+    
+
+    <!-- Trending Table -->
+    <section id="trends">
+        <h2>Trending Fashion Items</h2>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Category</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Leather Jacket</td>
+                <td>Men's Wear</td>
+                <td>$120</td>
+            </tr>
+            <tr>
+                <td>Evening Gown</td>
+                <td>Women's Wear</td>
+                <td>$150</td>
+            </tr>
+            <tr>
+                <td>Sneakers</td>
+                <td>Footwear</td>
+                <td>$80</td>
+            </tr>
+            <tr>
+                <td>Backpack</td>
+                <td>Accessories</td>
+                <td>$45</td>
+            </tr>            
+        </table>
+    </section>
+
+   <!-- Fashion Categories -->
+    <section id="categories">
+        <h2>Fashion Categories</h2>
+        <ul>
+            <li><a href="#">Casual Wear</a></li>
+            <li><a href="#">Formal Attire</a></li>
+            <li><a href="#">Streetwear</a></li>
+            <li><a href="#">Footwear</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Sportswear</a></li>
+            <li><a href="#">Evening Gowns</a></li>
+            <li><a href="#">Winter Collection</a></li>
+        </ul>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form onsubmit="return validateForm()">
+            <div class="form-group">
+                <input type="text" id="name" placeholder=" " required>
+                <label for="name">Your Name</label>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder=" " required>
+                <label for="email">Your Email</label>
+            </div>
+            <div class="form-group">
+                <textarea id="message" placeholder=" " required></textarea>
+                <label for="message">Your Message</label>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Fashion Trendz | Follow us on: 
+            <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+        </p>
+    </footer>
+
+</body>
+</html>
